@@ -1,0 +1,29 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2015 OA Wu Design
+ */
+
+@import "_oa";
+
+body {
+  padding-top: 20px;
+}
+
+#container {
+  .error {
+    
+    border: 1px solid rgba(255, 0, 0, .3);
+    @include alert('danger', false);
+    margin-bottom: 25px;
+  }
+  .table-form {
+    @include table-form();
+
+    .button {
+      @include button('blue', false);
+      display: inline-block;
+      position: relative;
+      line-height: 20px;
+    }
+  }
+}

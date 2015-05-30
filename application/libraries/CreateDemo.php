@@ -28,6 +28,12 @@ class CreateDemo {
     return implode (array_slice ($elements, 0, $length));
   }
 
+  public static function eng ($length = 3) {
+    $elements = array_merge (range ('a', 'z'));
+    shuffle ($elements);
+    return implode (array_slice ($elements, 0, $length));
+  }
+
   public static function pics ($min = 1, $max = 4, $tags = array ('台灣之美')) {
     if (!count (self::$pics))
       self::$pics = self::rand_pics ($tags);

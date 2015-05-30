@@ -1,0 +1,4 @@
+
+sudo chmod 666 /private/etc/hosts && sudo chmod 666 /private/etc/apache2/extra/httpd-vhosts.conf
+
+sudo chmod 644 /private/etc/hosts && sudo chmod 644 /private/etc/apache2/extra/httpd-vhosts.conf

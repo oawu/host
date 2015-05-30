@@ -1,0 +1,47 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2015 OA Wu Design
+ */
+
+@import "_oa";
+
+.table-list {
+  @include table-list();
+  font-size: 15px;
+  margin-top: 25px;
+  thead {
+    tr {
+      th {
+        text-align: left;
+
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        text-align: left;
+        vertical-align: middle;
+
+        svg {
+          width: 24px;
+          cursor: pointer;
+        }
+        span {
+          position: relative;
+          display: inline-block;
+          margin-top: 7px;
+          vertical-align: middle;
+        }
+
+        &.buttons {
+          text-align: right;
+
+          a {
+            @include button('cyan');
+          } 
+        }
+      }
+    }
+  }
+} 

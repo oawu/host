@@ -1,0 +1,34 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2015 OA Wu Design
+ */
+
+@import "_oa";
+
+.conditions {
+  margin-top: 25px;
+  text-align: left;
+  @include split-right(100px);
+
+  .l {
+    @include clearfix();
+
+    input {
+      float: left;
+      @include input();
+      width: 260px;
+      + input {
+        margin-left: 20px;
+      }
+    }
+  }
+  .r {
+    text-align: right;
+
+    button {
+      &[type="submit"] {
+        @include button('blue-gray');
+      }
+    }
+  }
+}
